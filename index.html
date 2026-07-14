@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Critter Tales</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+ 
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4 head">Magical Story Teller</h1>
+        <h2  class="text-center">🦁 + 🐜 = A brand new adventure!
+
+</h2><p style="text-align: center; font-size: 20px;">Enter any animal and insect, choose a story type, and watch a unique tale appear instantly.</p>
+        <br>
+        <br>
+        <div class="text-center input-head" class="mb-3">
+        <h3>Enter an animal name:</h3>
+
+            <input type="text" class="input-control" id="animalInput" placeholder="e.g., Elephant">
+        </div>
+        <div class="text-center input-head" class="mb-3">
+        <h3>Enter an insect name:</h3>
+
+            <input type="text" class="input-control" id="insectInput" placeholder="e.g., Ant">
+        </div>
+
+        <div class="mb-3 btn-center">
+            <label class="form-label">Let's watch a unique story come to life...</label>
+        <button   class="btn btn-primary btn-style" id="magicalBtn">Tell Me a Magical Story✨!!!</button>
+        <button   class="btn btn-primary btn-style" id="adventureBtn">Tell Me a Adventure Story🛡️!!!</button>
+        <button   class="btn btn-primary btn-style" id="friendshipBtn">Tell Me a Friendship Story❤️!!!</button>
+        <button   class="btn btn-primary btn-style" id="funnyBtn">Tell Me a Funny Story😂!!!</button>
+        <button   class="btn btn-primary btn-style" id="moralBtn">Tell Me a Moral Story📚!!!</button>
+    </div>
+    <br>
+            <textarea class="form-control" rows="5"></textarea>
+            <button id="another-story-Btn" class="btn btn-warning mt-2">Generate Another🔁</button>
+            <button id="save-favorite-Btn" class="btn btn-success mt-2">Save Favorite Story❤️</button>
+            <button id="featured-story-Btn" class="btn btn-danger mt-2">Featured Story🌟</button>
+        <div id="storyOutput" class="mt-4">🤗Every great story begins with two tiny words.<br>
+
+Choose an animal. Choose an insect. Let imagination do the rest.</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

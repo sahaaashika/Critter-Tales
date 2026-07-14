@@ -1,0 +1,54 @@
+body {
+    background-image: linear-gradient(#065b32ce, #11c96dce, #adffd6ce) !important;
+    background-repeat: no-repeat !important;
+    min-height: 100ch !important;
+    margin: 0 !important;
+}
+.head{
+    background:
+    -webkit-linear-gradient(transparent, transparent),
+    url("https://i0.wp.com/picjumbo.com/wp-content/uploads/crazy-iridescent-smoke-abstract-background-free-image.jpeg?w=600&quality=80") ;
+font-size: 70px;
+font-weight: bolder;
+  background-size: 450px auto;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.input-head{
+    display: flex;
+    justify-content: center;
+}
+.input-control{
+    width:250px;
+    
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin:20px;
+    margin-top:8px;
+}
+.btn-center{
+   display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+.btn-style{
+    margin-left: 10px; 
+    color: #ffffff;
+  background: linear-gradient(135deg, #f10b85 0%,#f10b85 0%,#f10b85 30%,rgb(249, 149, 211),#f10b85 20%,rgb(238, 139, 204), #e305b3 100%);
+  box-shadow: 0 8px 16px rgba(0, 180, 216, 0.3);
+     font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 50px; 
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
