@@ -1,50 +1,85 @@
-body {
-    background-image: linear-gradient(#065b32ce, #11c96dce, #adffd6ce) !important;
-    background-repeat: no-repeat !important;
-    min-height: 100ch !important;
-    margin: 0 !important;
-}
-.head{
-    background:
+:root {
+  --bg-img:
+    linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)),
+    url("./image/fox-light-bg.png") center/cover no-repeat fixed;
+  --text-color: #333333;
+  --button-bg: #eeeeee;
+  --button-text: #000000;
+  --head-background: 
     -webkit-linear-gradient(transparent, transparent),
-    url("https://i0.wp.com/picjumbo.com/wp-content/uploads/crazy-iridescent-smoke-abstract-background-free-image.jpeg?w=600&quality=80") ;
-font-size: 70px;
-font-weight: bolder;
+    url("https://static.vecteezy.com/system/resources/thumbnails/030/475/266/small/background-for-productgraphy-ai-generative-photo.jpg");
+}
+
+.dark-mode {
+  --bg-img:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("./image/fox-dark-bg.png") center/cover no-repeat fixed;
+--text-color: #ffffff;
+  --button-bg: #333333;
+  --button-text: #ffffff;
+  --head-background: 
+    -webkit-linear-gradient(transparent, transparent),
+    url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL5PPIHqlNXDqCE-n5ksMirILg2_8mNsNkvnWZvXk-7_zpdVomnd0KPtI&s=10");
+
+}
+
+body {
+  background: var(--bg-img) !important;
+  color: var(--text-color);
+  font-family: sans-serif;
+  transition: color 0.3s ease;
+  min-height: 100vh !important;
+  margin: 0 !important;
+}
+
+.head {
+  background: var(--head-background);
+  font-size: 70px;
+  font-weight: bolder;
   background-size: 450px auto;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
-.input-head{
-    display: flex;
-    justify-content: center;
+.input-head {
+  display: flex;
+  justify-content: center;
 }
-.input-control{
-    width:250px;
-    
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    margin:20px;
-    margin-top:8px;
+.input-control {
+  width: 250px;
+
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin: 20px;
+  margin-top: 8px;
 }
-.btn-center{
-   display: flex;
-  justify-content: center; 
-  align-items: center; 
+.btn-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.btn-style{
-    margin-left: 10px; 
-    color: #ffffff;
-  background: linear-gradient(135deg, #f10b85 0%,#f10b85 0%,#f10b85 30%,rgb(249, 149, 211),#f10b85 20%,rgb(238, 139, 204), #e305b3 100%);
+.btn-style {
+  margin-left: 10px;
+  color: #ffffff;
+  background: linear-gradient(
+    135deg,
+    #7e0345 0%,
+    #7c0243 0%,
+    #f10b85 70%,
+    rgb(249, 149, 211),
+    #f10b85 20%,
+    rgb(238, 139, 204),
+    #710559 100%
+  );
   box-shadow: 0 8px 16px rgba(0, 180, 216, 0.3);
-     font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   padding: 14px 32px;
   border: none;
-  border-radius: 50px; 
+  border-radius: 50px;
   cursor: pointer;
   display: inline-block;
   text-align: center;
@@ -52,3 +87,32 @@ font-weight: bolder;
   position: relative;
   overflow: hidden;
 }
+p,
+h3,
+h4,
+.dropdown-item,
+.navbar,
+.footer,
+.all-font {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-style: normal;
+}
+
+.lavishly-yours-regular {
+  font-family: "Lavishly Yours", cursive;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.inspiration-regular {
+  font-family: "Inspiration", cursive;
+  font-weight: bold;
+  font-style: normal;
+}
+.rubik-puddles-regular {
+  font-family: "Rubik Puddles", system-ui;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 20px;
+}
+.dark-mode, .dark-mode p, .dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode h5, .dark-mode h6, .dark-mode .navbar, .dark-mode .footer, .dark-mode .dropdown-item, .dark-mode .all-font { color: #ffffff !important; }
