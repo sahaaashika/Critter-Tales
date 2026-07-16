@@ -5,6 +5,7 @@
   --text-color: #333333;
   --button-bg: #eeeeee;
   --button-text: #000000;
+  --story-background: #ffffff;
   --head-background: 
     -webkit-linear-gradient(transparent, transparent),
     url("https://static.vecteezy.com/system/resources/thumbnails/030/475/266/small/background-for-productgraphy-ai-generative-photo.jpg");
@@ -17,6 +18,7 @@
 --text-color: #ffffff;
   --button-bg: #333333;
   --button-text: #ffffff;
+  --story-background: #343232;
   --head-background: 
     -webkit-linear-gradient(transparent, transparent),
     url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL5PPIHqlNXDqCE-n5ksMirILg2_8mNsNkvnWZvXk-7_zpdVomnd0KPtI&s=10");
@@ -31,7 +33,9 @@ body {
   min-height: 100vh !important;
   margin: 0 !important;
 }
-
+#story {
+  background-color: var(--story-background);
+}
 .head {
   background: var(--head-background);
   font-size: 70px;
@@ -114,5 +118,6 @@ h4,
   font-weight: bold;
   font-style: normal;
   font-size: 20px;
+}.dark-mode, .dark-mode p, .dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode h5, .dark-mode h6, .dark-mode .navbar, .dark-mode .footer, .dark-mode .all-font {
+  color: #ffffff !important;
 }
-.dark-mode, .dark-mode p, .dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode h5, .dark-mode h6, .dark-mode .navbar, .dark-mode .footer, .dark-mode .dropdown-item, .dark-mode .all-font { color: #ffffff !important; }
